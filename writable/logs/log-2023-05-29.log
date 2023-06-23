@@ -1,0 +1,183 @@
+CRITICAL - 2023-05-29 22:17:32 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:18:11 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:20:57 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:21:01 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:21:04 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:22:15 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:22:16 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:22:36 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 27.
+ 1 APPPATH\Views\topo.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 22:24:17 --> Undefined variable $hashedPassword
+in APPPATH\Views\topo.php on line 28.
+ 1 APPPATH\Views\topo.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hashedPassword', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('topo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:21:53 --> Undefined variable $titulo
+in APPPATH\Views\topo.php on line 8.
+ 1 APPPATH\Views\topo.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\topo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('topo', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('topo')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:22:46 --> Undefined variable $msg
+in APPPATH\Views\User.php on line 19.
+ 1 APPPATH\Views\User.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\User.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\User.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('User', [], true)
+ 5 APPPATH\Controllers\Home.php(15): view('User', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:22:58 --> Undefined variable $acao
+in APPPATH\Views\User.php on line 23.
+ 1 APPPATH\Views\User.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $acao', 'C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\User.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Views\\User.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('User', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('User', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:37:51 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Grao-Bistro\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:46:45 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Home.php(28): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:49:19 --> hash() expects at least 2 arguments, 1 given
+in APPPATH\Controllers\Home.php on line 27.
+ 1 APPPATH\Controllers\Home.php(27): hash('456')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:52:45 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\Grao-Bistro\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 249.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'sha256', 'senha', null)
+ 2 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\IncomingRequest->getPost('sha256', 'senha')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:53:02 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\Grao-Bistro\system\HTTP\IncomingRequest.php on line 782
+in SYSTEMPATH\HTTP\RequestTrait.php on line 249.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(782): CodeIgniter\HTTP\Request->fetchGlobal('post', 'sha256', 'senha', null)
+ 2 APPPATH\Controllers\Home.php(27): CodeIgniter\HTTP\IncomingRequest->getPost('sha256', 'senha')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 23:59:06 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(742): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\Home.php(29): CodeIgniter\Model->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->Cadastrar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
