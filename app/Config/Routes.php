@@ -38,6 +38,8 @@ $routes->post('Cadastrar/Cliente', 'Usuarios_Control::CadastrarClientes');//Cada
 
 $routes->get('Home', 'Home');
 
+$routes->get('Menu', 'Cardapio_Control::Menu');
+
 
 //$routes->get('view', 'Home::view2');
 //$routes->get('view/(:segment)', 'Home::view/$1');
