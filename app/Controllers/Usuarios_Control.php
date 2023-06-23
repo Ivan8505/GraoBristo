@@ -9,7 +9,7 @@ Class Usuarios_Control extends BaseController {
         if ($session->get('Usuario') == null) {
             return redirect()->to('Login');
         }
-        //return view('Home', $data);
+        return view('Home', $data);
     }
 
     public function Login() {
@@ -29,13 +29,10 @@ Class Usuarios_Control extends BaseController {
             $passe = $this->request->getPost('pass');
 
             $db = db_connect();
-            $query = $db->query("SELECT 'Cliente' AS Origem, Senha FROM Cliente WHERE nome = '$user'
-                                     UNION
-                                     SELECT 'Funcionario' AS Origem, Senha FROM Funcionario WHERE nome = '$user';");
+            $query = $db->query("SELECT Senha FROM Cliente WHERE nome = '$user';");
             foreach ($query->getResult() as $row) {
                 if (password_verify($passe, $row->Senha)) {
                     $session = session();
-                    $session->set('Tipo', $row->Origem);
                     $session->set('Usuario', $user);
                     return redirect()->to('Home');
                 }
@@ -46,14 +43,14 @@ Class Usuarios_Control extends BaseController {
 
     public function CadastrarCliente() {
         $data['Titulo'] = 'Cadastrar';
-        $data['Tipo'] = 'Cliente';
+        $data['Tipo'] = 'Cadastrar';
         return view('User_View', $data);
     }
 
     public function CadastrarClientes() {
         $rules = [//Regras do campo
             'name' => 'required',
-            //'Email' => 'required|is_unique[]',
+            'Email' => 'required|is_unique[Cliente.Email]',
             'pass' => 'required',
             'confirm' => 'required',
             'cel' => 'required',
@@ -62,11 +59,11 @@ Class Usuarios_Control extends BaseController {
         ];
         $error = [//Return das regras
             'name' => ['required' => 'O campo Nome é obrigatório'],
-            'Email' => ['required' => 'O campo Email é obrigatório'],
+            'Email' => ['required' => 'O campo Email é obrigatório', 'is_unique' => 'O Email informado já está em uso'],
             'pass' => ['required' => 'O campo Senha é obrigatório'],
             'confirm' => ['required' => 'O campo Confirmação de Senha é obrigatório'],
             'cel' => ['required' => 'O campo Celular é obrigatório'],
-            'cpf' => ['required' => 'O campo CPF é obrigatório'],
+            'cpf' => ['required' => 'O campo CPF é obrigatório', 'is_unique' => 'O CPF informado já esta em uso'],
             'endereco' => ['required' => 'O campo Endereço é obrigatório'],
         ];
         if ($this->validate($rules, $error)) {
@@ -78,20 +75,24 @@ Class Usuarios_Control extends BaseController {
             $cpf = $this->request->getPost('cpf');
             $endereco = $this->request->getPost('endereco');
 
-            if ($passe != $confirm) {return redirect()->to('Cadastrar');}//Se as senhas Forem diferentes Retorna Para a tela cadastro
+            if ($passe != $confirm) {
+                return redirect()->to('Cadastrar');
+            }//Se as senhas Forem diferentes Retorna Para a tela cadastro
 
             $dados['Nome'] = $name;
-            $dados['Senha'] = password_hash($passe, PASSWORD_DEFAULT);
             $dados['CPF'] = $cpf;
-            
+            $dados['Celular'] = $number;
+            $dados['Senha'] = password_hash($passe, PASSWORD_DEFAULT);
+            $dados['Endereco'] = $endereco;
+            $dados['Email'] = $user;
+
             $db = new \App\Models\ClientesModel;
-            
+
             if ($db->insert($dados)) {
                 $session = session();
                 $session->set('Usuario', $user);
-                $session->set('Tipo', "Cliente");
+                return redirect()->to('Home');
             }
-            return redirect()->to('Home');
         }
         return redirect()->to('Cadastrar');
     }

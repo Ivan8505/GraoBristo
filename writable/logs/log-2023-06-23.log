@@ -60,3 +60,1084 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-06-23 00:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 16:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 16:48:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(34): CodeIgniter\Database\BaseConnection->query('SELECT 'Cliente...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->Logar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(34): CodeIgniter\Database\BaseConnection->query('SELECT 'Cliente...')
+#3 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->Logar()
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-23 16:48:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Usuarios_Control.php(34): CodeIgniter\Database\BaseConnection->query('SELECT \'Cliente\' AS Origem, Senha FROM Cliente WHERE nome = \'1\'
+                                     UNION
+                                     SELECT \'Funcionario\' AS Origem, Senha FROM Funcionario WHERE nome = \'1\';')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->Logar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 16:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 16:57:04 --> mysqli_sql_exception: Table 'bd_graobristo.funcionario' doesn't exist in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 'Cliente...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 'Cliente...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 'Cliente...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(34): CodeIgniter\Database\BaseConnection->query('SELECT 'Cliente...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->Logar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-23 16:57:04 --> Table 'bd_graobristo.funcionario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT \'Cliente\' AS Origem, Senha FROM Cliente WHERE nome = \'a\'
+                                     UNION
+                                     SELECT \'Funcionario\' AS Origem, Senha FROM Funcionario WHERE nome = \'a\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \'Cliente\' AS Origem, Senha FROM Cliente WHERE nome = \'a\'
+                                     UNION
+                                     SELECT \'Funcionario\' AS Origem, Senha FROM Funcionario WHERE nome = \'a\';')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \'Cliente\' AS Origem, Senha FROM Cliente WHERE nome = \'a\'
+                                     UNION
+                                     SELECT \'Funcionario\' AS Origem, Senha FROM Funcionario WHERE nome = \'a\';')
+ 4 APPPATH\Controllers\Usuarios_Control.php(34): CodeIgniter\Database\BaseConnection->query('SELECT \'Cliente\' AS Origem, Senha FROM Cliente WHERE nome = \'a\'
+                                     UNION
+                                     SELECT \'Funcionario\' AS Origem, Senha FROM Funcionario WHERE nome = \'a\';')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->Logar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:02:00 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:02:08 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:02:09 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:02:10 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:02:12 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:02:18 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:02:46 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:02:47 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:12:29 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:53 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:54 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:54 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:54 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:54 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:55 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:55 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:55 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:55 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:55 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:12:55 --> Too few arguments to function view(), 0 passed in C:\xampp\htdocs\GraoBristo\app\Controllers\Home.php on line 6 and at least 1 expected
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Home.php(6): view()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:27:37 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:30:03 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:30:03 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:30:03 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 17:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 17:30:04 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:31:39 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-23 17:31:51 --> Invalid file: "Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 3 APPPATH\Controllers\Home.php(6): view('Home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:53:37 --> include(./Header.php): Failed to open stream: No such file or directory
+in APPPATH\Views\Cardapio_View.php on line 13.
+ 1 APPPATH\Views\Cardapio_View.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(./Header.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 13)
+ 2 APPPATH\Views\Cardapio_View.php(13): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 6 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 17:57:56 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+in APPPATH\Views\Cardapio_View.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-23 18:08:59 --> syntax error, unexpected end of file
+in APPPATH\Views\Cardapio_View.php on line 581.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 3 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 18:09:00 --> syntax error, unexpected end of file
+in APPPATH\Views\Cardapio_View.php on line 581.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 3 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 18:10:03 --> Undefined variable $row1
+in APPPATH\Views\Cardapio_View.php on line 36.
+ 1 APPPATH\Views\Cardapio_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-23 18:11:41 --> mysqli_sql_exception: Table 'bd_graobristo.itens' doesn't exist in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ID, Nome...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID, Nome...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID, Nome...')
+#3 C:\xampp\htdocs\GraoBristo\app\Views\Cardapio_View.php(32): CodeIgniter\Database\BaseConnection->query('SELECT ID, Nome...')
+#4 C:\xampp\htdocs\GraoBristo\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\GraoBristo\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\GraoBristo\system\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', Array, true)
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-23 18:11:41 --> Table 'bd_graobristo.itens' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ID, Nome_Item, Valor_Item, URL FROM itens', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID, Nome_Item, Valor_Item, URL FROM itens')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID, Nome_Item, Valor_Item, URL FROM itens')
+ 4 APPPATH\Views\Cardapio_View.php(32): CodeIgniter\Database\BaseConnection->query('SELECT ID, Nome_Item, Valor_Item, URL FROM itens')
+ 5 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 8 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 18:12:23 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResult
+in APPPATH\Views\Cardapio_View.php on line 33.
+ 1 APPPATH\Views\Cardapio_View.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResult', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-23 18:13:15 --> mysqli_sql_exception: Unknown column 'Entrada' in 'where clause' in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ID, Nome...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID, Nome...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID, Nome...')
+#3 C:\xampp\htdocs\GraoBristo\app\Views\Cardapio_View.php(32): CodeIgniter\Database\BaseConnection->query('SELECT ID, Nome...')
+#4 C:\xampp\htdocs\GraoBristo\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\GraoBristo\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\GraoBristo\system\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', Array, true)
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-23 18:13:15 --> Unknown column 'Entrada' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ID, Nome_Item, Valor_Item, URL FROM item WHERE Categoria = Entrada', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID, Nome_Item, Valor_Item, URL FROM item WHERE Categoria = Entrada')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID, Nome_Item, Valor_Item, URL FROM item WHERE Categoria = Entrada')
+ 4 APPPATH\Views\Cardapio_View.php(32): CodeIgniter\Database\BaseConnection->query('SELECT ID, Nome_Item, Valor_Item, URL FROM item WHERE Categoria = Entrada')
+ 5 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 8 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 18:16:26 --> Undefined variable $session
+in APPPATH\Views\Cardapio_View.php on line 62.
+ 1 APPPATH\Views\Cardapio_View.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:24:38 --> dot_array_search(): Argument #2 ($array) must be of type array, null given, called in C:\xampp\htdocs\GraoBristo\app\Views\Cardapio_View.php on line 568
+in SYSTEMPATH\Helpers\array_helper.php on line 21.
+ 1 APPPATH\Views\Cardapio_View.php(568): dot_array_search('0.Valor', null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:41:17 --> Undefined constant "App\Controllers\v"
+in APPPATH\Controllers\Cardapio_Control.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:49:06 --> Undefined variable $qtn
+in APPPATH\Views\Cardapio_View.php on line 70.
+ 1 APPPATH\Views\Cardapio_View.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:49:08 --> Undefined variable $qtn
+in APPPATH\Views\Cardapio_View.php on line 70.
+ 1 APPPATH\Views\Cardapio_View.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:54:15 --> Undefined constant "qtySelect"
+in APPPATH\Views\Cardapio_View.php on line 72.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:54:45 --> Undefined constant "qtySelect"
+in APPPATH\Views\Cardapio_View.php on line 72.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:54:46 --> Undefined constant "qtySelect"
+in APPPATH\Views\Cardapio_View.php on line 72.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 18:54:46 --> Undefined constant "qtySelect"
+in APPPATH\Views\Cardapio_View.php on line 72.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 18:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 18:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:35:23 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Cardapio_View.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:35:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Cardapio_View.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:35:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Cardapio_View.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:35:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Cardapio_View.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:35:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Cardapio_View.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 4 APPPATH\Controllers\Cardapio_Control.php(7): view('Cardapio_View')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:45:32 --> Unsupported operand types: string + null
+in APPPATH\Controllers\Cardapio_Control.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 19:47:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(41): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-23 19:47:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 4 APPPATH\Controllers\Cardapio_Control.php(41): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 19:49:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(41): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-23 19:49:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 4 APPPATH\Controllers\Cardapio_Control.php(41): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 19:49:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-23 19:49:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 4 APPPATH\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 19:49:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-23 19:49:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 4 APPPATH\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 19:49:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-23 19:49:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 4 APPPATH\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 19:53:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-23 19:53:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 4 APPPATH\Controllers\Cardapio_Control.php(42): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item, Valor_Item FROM item WHERE ID = ')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 19:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:53:40 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 19:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 19:53:40 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:04:29 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:04:30 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:04:30 --> Undefined variable $qtn
+in APPPATH\Views\Cardapio_View.php on line 77.
+ 1 APPPATH\Views\Cardapio_View.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(9): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:04:32 --> Undefined variable $qtn
+in APPPATH\Views\Cardapio_View.php on line 77.
+ 1 APPPATH\Views\Cardapio_View.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(9): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:04:33 --> Undefined variable $qtn
+in APPPATH\Views\Cardapio_View.php on line 77.
+ 1 APPPATH\Views\Cardapio_View.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(9): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:04:33 --> Undefined variable $qtn
+in APPPATH\Views\Cardapio_View.php on line 77.
+ 1 APPPATH\Views\Cardapio_View.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(9): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:04:35 --> Undefined variable $qtn
+in APPPATH\Views\Cardapio_View.php on line 77.
+ 1 APPPATH\Views\Cardapio_View.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(9): view('Cardapio_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:05:17 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:05:30 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:05:30 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:05:31 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:05:35 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 58.
+ 1 APPPATH\Controllers\Cardapio_Control.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:06:06 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Cardapio_Control.php on line 53.
+ 1 APPPATH\Controllers\Cardapio_Control.php(53): array_push(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:06:07 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Cardapio_Control.php on line 53.
+ 1 APPPATH\Controllers\Cardapio_Control.php(53): array_push(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:06:35 --> Undefined variable $carrinho
+in APPPATH\Controllers\Cardapio_Control.php on line 33.
+ 1 APPPATH\Controllers\Cardapio_Control.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Cardapio_Control.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->Adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:11:13 --> Undefined variable $session
+in APPPATH\Views\Cardapio_View.php on line 68.
+ 1 APPPATH\Views\Cardapio_View.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:11:28 --> Undefined variable $carrinho
+in APPPATH\Views\Cardapio_View.php on line 68.
+ 1 APPPATH\Views\Cardapio_View.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carrinho', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:11:38 --> Undefined variable $session
+in APPPATH\Views\Cardapio_View.php on line 93.
+ 1 APPPATH\Views\Cardapio_View.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:11:54 --> Array to string conversion
+in APPPATH\Views\Cardapio_View.php on line 93.
+ 1 APPPATH\Views\Cardapio_View.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:11:55 --> Array to string conversion
+in APPPATH\Views\Cardapio_View.php on line 93.
+ 1 APPPATH\Views\Cardapio_View.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:12:17 --> Undefined variable $session
+in APPPATH\Views\Cardapio_View.php on line 95.
+ 1 APPPATH\Views\Cardapio_View.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:12:56 --> Undefined variable $session
+in APPPATH\Views\Cardapio_View.php on line 96.
+ 1 APPPATH\Views\Cardapio_View.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:14:31 --> Undefined variable $session
+in APPPATH\Views\Cardapio_View.php on line 97.
+ 1 APPPATH\Views\Cardapio_View.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 20:14:31 --> Undefined variable $session
+in APPPATH\Views\Cardapio_View.php on line 97.
+ 1 APPPATH\Views\Cardapio_View.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Cardapio_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Cardapio_View', [], true)
+ 5 APPPATH\Controllers\Cardapio_Control.php(11): view('Cardapio_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-23 20:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 20:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

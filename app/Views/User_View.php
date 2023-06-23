@@ -8,7 +8,7 @@
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
         <?php if ($Tipo == 'Login'): ?>
             <link rel="stylesheet" href="<?php echo base_url('public/CSS/style.css') ?>" />
-        <?php elseif ($Tipo == 'Cliente'): ?>
+        <?php elseif ($Tipo == 'Cadastrar'): ?>
             <link rel="stylesheet" href="<?php echo base_url('public/CSS/estilo.css') ?>" />
         <?php endif ?>
     </head>
@@ -43,7 +43,7 @@
                     <a href="<?php echo base_url('public/Cadastrar') ?>">Cadastre-se</a>
                 </div>
             </div>
-        <?php elseif ($Tipo == 'Cliente'): ?>
+        <?php elseif ($Tipo == 'Cadastrar'): ?>
             <div class='container'>
                 <div class='card'>
 
@@ -52,7 +52,7 @@
                     <div id='msgError'></div>
                     <div id='msgSuccess'></div>
 
-                    <form method="post" action="<?php echo base_url("public/Cadastrar/Cliente")?>">
+                    <form method="post" action="<?php echo base_url("public/Cadastrar/usuario")?>">
                         <div class="label-float">
                             <input type="text" id="nome" name="name" placeholder=" " required>
                             <label id="labelNome" for="nome">Nome</label>
