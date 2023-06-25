@@ -61,7 +61,7 @@ $errorId = uniqid('error', true);
             <div class="content" id="backtrace">
 
                 <ol class="trace">
-                <?php foreach ($trace as $index => $row) : ?>
+                <?php foreach ($trace as $index1 => $row) : ?>
 
                     <li>
                         <p>
@@ -82,7 +82,7 @@ $errorId = uniqid('error', true);
                             <?php if (isset($row['class'])) : ?>
                                 &nbsp;&nbsp;&mdash;&nbsp;&nbsp;<?= esc($row['class'] . $row['type'] . $row['function']) ?>
                                 <?php if (! empty($row['args'])) : ?>
-                                    <?php $argsId = $errorId . 'args' . $index ?>
+                                    <?php $argsId = $errorId . 'args' . $index1 ?>
                                     ( <a href="#" onclick="return toggle('<?= esc($argsId, 'attr') ?>');">arguments</a> )
                                     <div class="args" id="<?= esc($argsId, 'attr') ?>">
                                         <table cellspacing="0">

@@ -32,35 +32,14 @@ Class Usuarios_Control extends BaseController {
             $query = $db->query("SELECT Senha FROM Cliente WHERE Email = '$user';");
             foreach ($query->getResult() as $row) {
                 echo $passe;
-                /*echo $row->Senha;
-                echo (password_hash($row->Senha, PASSWORD_DEFAULT));
-                echo "<br><hr>";
-                echo (password_hash($passe, PASSWORD_DEFAULT));
-                echo "<br><hr>";
-                echo $hash = (password_hash($passe, PASSWORD_DEFAULT));
-                echo '<br>';
-                echo password_verify($passe, $hash);
-                echo "<br>";
-                echo $hash;
-                echo "<br><hr>";
-                echo PASSWORD_DEFAULT;
-                echo "<br><hr>";
-                echo password_verify($passe, $row->Senha);
-                echo "<br>";
-                echo $passe;
-                echo "<br>";
-                echo $row->Senha;
-                echo "<br>";*/
                 if (password_verify($passe, $row->Senha)) {
-                    $session = session();
-                    $session = session_destroy();
-                    $session = session();
+                    $session = session();   
                     $session->set('Usuario', $user);
                     return redirect()->to('Home');
                 }
             }
         }
-        //return redirect()->to('Login');
+        return redirect()->to('Login');
     }
 
     public function CadastrarCliente() {
