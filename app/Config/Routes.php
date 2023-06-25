@@ -36,10 +36,10 @@ $routes->post('Logar', 'Usuarios_Control::Logar');//Validação Login
 $routes->get('Cadastrar', 'Usuarios_Control::CadastrarCliente');//Tela Cadastro Cliente
 $routes->post('Cadastrar/usuario', 'Usuarios_Control::CadastrarClientes');//Cadastrar Cliente
 $routes->get('Home', 'Home');//Tela Home
-
 $routes->get('Menu', 'Cardapio_Control');//Tela cardapio
 $routes->post('Adicionar', 'Cardapio_Control::Adicionar');
-
+$routes->get('Menu', 'Cardapio_Control::Menu');
+$routes->post('Compra', 'Cardapio_Control::Compra');
 
 
 //$routes->get('view', 'Home::view2');

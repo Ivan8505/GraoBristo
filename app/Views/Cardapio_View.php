@@ -1,3 +1,4 @@
+<?php $total = 0 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -35,52 +36,45 @@
                                 $Nome = $row1->Nome_Item;
                                 $Categoria = $row->Categoria;
                                 $valor = $row1->Valor_Item;
+                                $qtn = 0;
+                                $preco = 0
                                 ?>
-                                <form action="Adicionar" method="post">
-                                    <tr>
-                                        <td>
-                                            <div class="product">
-                                                <img src="<?php echo base_url("public/imagens/$row1->URL") ?>" alt="" />
-                                                <div class="info">
-                                                    <div class="name"><?php echo $Nome ?></div>
-                                                    <div class="category"><?php echo $Categoria ?></div>
-                                                </div>
+
+                                <tr>
+                                    <td>
+                                        <div class="product">
+                                            <img src="<?php echo base_url("public/imagens/$row1->URL") ?>" alt="Error 404" />
+                                            <div class="info">
+                                                <div class="name"><?php echo $Nome ?></div>
+                                                <div class="category"><?php echo $Categoria ?></div>
                                             </div>
-                                        </td>
-                                        <td>R$ <?php echo $valor ?></td>
-                                        <td>
-                                            <div class="qty">
-                                                <select class="qty" name="qtn" aria-label="Default select example">
-                                                    <option selected>Selecione a quantidade</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                </select>
-                                                <input type="hidden" name="id" value="<?php echo $id ?>">
-                                            </div>
-                                        </td>
-                                        <?php if ($Carrinho == null): ?>
-                                            <?php
-                                            for ($index = 0; $index < count($session->get('Carrinho')); $index++) :
-                                                $qnt = dot_array_search("$index.qtn", $session->get('Carrinho'));
-                                                $valor = dot_array_search("$index.preço", $session->get('Carrinho'));
-                                                echo $valor;
-                                                ?>
-                                            <?php endfor ?>
-                                        <?php else : $qtn = 0 ?>
+                                        </div>
+                                    </td>
+                                    <td>R$ <?php echo $valor; ?></td>
+                                    <?php for ($index = 0; $index < count($Carrinho); $index++): ?>
+                                        <?php if (dot_array_search("$index.ID", $Carrinho) == $id): ?>
+                                            <?php $qtn = dot_array_search("$index.qtn", $Carrinho) ?>
+                                            <?php $preco = dot_array_search("$index.preço", $Carrinho) ?>
                                         <?php endif ?>
-                                        <td>R$ <?php echo $valor * $qtn ?></td>
-                                        <td>
-                                            <button class="remove" type="submit">+</button>
-                                        </td>
-                                    </tr>
+                                    <?php endfor ?>
+                                <form action="Adicionar" method="post">
+                                    <td>
+                                        <div class="qty">
+                                            <select class="qty" name="qtn" aria-label="Default select example">
+                                                <option selected>Selecione a quantidade</option>
+                                                <?php for ($index = 1; $index < 10; $index++): ?>
+                                                    <option value="<?php echo $index ?>" <?php if($qtn == $index): echo "selected"; endif?>><?php echo $index ?></option>
+                                                <?php endfor ?>
+                                            </select>
+                                            <input type="hidden" name="id" value="<?php echo $id ?>">
+                                        </div>
+                                    </td>
+                                    <td>R$ <?php echo $qtn * $preco?></td>
+                                    <td>
+                                        <button class="remove" type="submit">+</button>
+                                    </td>
                                 </form>
+                                </tr>
                             <?php endforeach; ?>
                         <?php endforeach; ?>
                         </td>
@@ -92,20 +86,23 @@
                         <div class="info">
                             <?php for ($index = 0; $index < count($Carrinho); $index++): ?>
                                 <?php if (dot_array_search("$index.preço", $Carrinho) != null): ?>
-                                    <div><span>Item</span><span><?php echo dot_array_search("0.name", $Carrinho) ?></span></div>
-                                    <div><span>Quantidade</span><span><?php if ($Carrinho) {echo dot_array_search("$index.qtn", $Carrinho);} else {echo "0";}?></span></div>
-                                    <div><span>Sub-total</span><span>R$ <?php echo dot_array_search("$index.qtn", $Carrinho) * dot_array_search("$index.preço", $Carrinho) ?></span></div>
+                                    <?php $totaladd = intval(dot_array_search("$index.qtn", $Carrinho)) * intval(dot_array_search("$index.preço", $Carrinho)) ?>
+                                    <?php $total = $total + $totaladd ?>
                                 <?php endif ?>
                             <?php endfor ?>
+                            <div><span>Sub-total</span><span>R$ <?php echo $total ?></span></div>
                             <div><span>Frete</span><span>Gratuito</span></div>
 
                         </div>
                         <footer>
                             <span>Total</span>
-                            <span>R$ 418</span>
+                            <span>R$ <?php echo $total ?></span>
                         </footer>
                     </div>
-                    <button>Finalizar Compra</button>
+                    <form action="Compra" method="Post">
+                        <input type="hidden" value="<?php echo $total ?>" name="valorTotal">
+                        <button>Finalizar Compra</button>
+                    </form>
                 </aside>
             </div>
         </main>

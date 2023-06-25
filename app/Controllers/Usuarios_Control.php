@@ -6,10 +6,10 @@ Class Usuarios_Control extends BaseController {
 
     public function index() {
         $session = session();
-        if ($session->get('Usuario') == null) {
+        if ($session->get('Usuario') != null) {
             return redirect()->to('Login');
         }
-        return view('Home', $data);
+        return view('Home');
     }
 
     public function Login() {
@@ -29,16 +29,38 @@ Class Usuarios_Control extends BaseController {
             $passe = $this->request->getPost('pass');
 
             $db = db_connect();
-            $query = $db->query("SELECT Senha FROM Cliente WHERE nome = '$user';");
+            $query = $db->query("SELECT Senha FROM Cliente WHERE Email = '$user';");
             foreach ($query->getResult() as $row) {
+                echo $passe;
+                /*echo $row->Senha;
+                echo (password_hash($row->Senha, PASSWORD_DEFAULT));
+                echo "<br><hr>";
+                echo (password_hash($passe, PASSWORD_DEFAULT));
+                echo "<br><hr>";
+                echo $hash = (password_hash($passe, PASSWORD_DEFAULT));
+                echo '<br>';
+                echo password_verify($passe, $hash);
+                echo "<br>";
+                echo $hash;
+                echo "<br><hr>";
+                echo PASSWORD_DEFAULT;
+                echo "<br><hr>";
+                echo password_verify($passe, $row->Senha);
+                echo "<br>";
+                echo $passe;
+                echo "<br>";
+                echo $row->Senha;
+                echo "<br>";*/
                 if (password_verify($passe, $row->Senha)) {
+                    $session = session();
+                    $session = session_destroy();
                     $session = session();
                     $session->set('Usuario', $user);
                     return redirect()->to('Home');
                 }
             }
         }
-        return redirect()->to('Login');
+        //return redirect()->to('Login');
     }
 
     public function CadastrarCliente() {
@@ -85,10 +107,14 @@ Class Usuarios_Control extends BaseController {
             $dados['Senha'] = password_hash($passe, PASSWORD_DEFAULT);
             $dados['Endereco'] = $endereco;
             $dados['Email'] = $user;
+            
+            //print_r($dados);
 
             $db = new \App\Models\ClientesModel;
 
             if ($db->insert($dados)) {
+                $session = session();
+                $session = session_destroy();
                 $session = session();
                 $session->set('Usuario', $user);
                 return redirect()->to('Home');

@@ -234,7 +234,7 @@ aside .box footer {
           justify-content: space-between;
 }
 
-aside > button {
+aside > form > button {
   border: 0;
   padding: 15px 0;
   color: white;
@@ -246,7 +246,7 @@ aside > button {
   font-size: 16px;
 }
 
-aside > button:hover {
+aside > form > button:hover {
   background: #6A7EFC;
 }
 /*# sourceMappingURL=styles.css.map */
