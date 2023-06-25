@@ -17,6 +17,8 @@ Class Cardapio_Control extends BaseController {
                 ]
             ];
         }
+        $db = new \App\Models\CardapioModel();
+        $data['Menu'] = $db->a();
         return view('Cardapio_View', $data);
     }
 
@@ -49,14 +51,12 @@ Class Cardapio_Control extends BaseController {
             if ($Id == dot_array_search("$index.ID", $carrinho)) {
                 print_r($carrinho);
                 $boo = false;
-                $qtn = $qtn;
                 $carrinho[$index]["qtn"] = $qtn;
             }
         }
-        echo "SELECT Nome_Item, Valor_Item FROM item WHERE ID = $Id";
         if ($boo) {
             if ($qtn == 'Selecione a quantidade') {
-                        return redirect()->to('Menu');
+                return redirect()->to('Menu');
             }
             $query1 = $db->query("SELECT Nome_Item, Valor_Item FROM item WHERE ID = $Id");
             foreach ($query1->getResult() as $row1) {
@@ -75,6 +75,61 @@ Class Cardapio_Control extends BaseController {
         }
 
         $sesion->set('Carrinho', $carrinho);
+        return redirect()->to('Menu');
+    }
+
+    public function Compra() {
+        $session = session();
+        $Carrinho = $session->get('Carrinho');
+        if ($Carrinho == null) {
+            return redirect()->to('Menu');
+            
+        }
+        $boo = true;
+        for ($index = 0; $index < count($Carrinho); $index++) {
+            if (dot_array_search("$index.ID", $Carrinho) != null) {
+                $boo = false;
+            }
+        }
+        if ($boo) {
+            return redirect()->to('Menu');
+        }
+        $boo = false;
+        $user = $session->get('Usuario');
+        $ItemCardapio = "";
+        $total = 0;
+        $itemadd = "2";
+        for ($index = 0; $index < count($Carrinho); $index++) {
+            if (dot_array_search("$index.ID", $Carrinho) != null) {
+                $itemadd = dot_array_search("$index.ID", $Carrinho);
+                $ItemCardapio = $itemadd . ", " . $ItemCardapio;
+                $totaladd = intval(dot_array_search("$index.qtn", $Carrinho)) * intval(dot_array_search("$index.preço", $Carrinho));
+                $total = $total + $totaladd;
+            }
+        }
+
+        $ModelUser = new \App\Models\ClientesModel();
+        $idUser = $ModelUser->Id($user);
+
+        $dados['ItemCardapio'] = $ItemCardapio;
+        $dados['Cliente'] = $idUser;
+        $dados['Conta'] = $total;
+        $dados['ID_Cliente'] = $idUser;
+        $ModelCompra = new \App\Models\CompraModel();
+        if ($ModelCompra->insert($dados)) {
+            for ($index = 0; $index < count($Carrinho); $index++) {
+                if (dot_array_search("$index.ID", $Carrinho) != null) {
+                    $Carrinho2 = $Carrinho;
+                    unset($Carrinho[$index]);
+                    $boo = true;
+                }
+                $session->set('Carrinho', $Carrinho);
+                $session->set('Comanda', $Carrinho2);
+            }
+        }
+        if ($boo) {
+            return redirect()->to('Pedidos');
+        }
         return redirect()->to('Menu');
     }
 
