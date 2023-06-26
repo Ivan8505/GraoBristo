@@ -36,7 +36,41 @@ class ItemModel extends Model {
         }
         return $Menu;
     }
-    
-        
+
+    public function a($a) {
+        $db = db_connect();
+        $b = explode(", ", $a);
+        $index = 0;
+        $index1 = 0;
+        $i = 0;
+        foreach ($b as $b) {
+            if ($index1 % 2 == 0) {
+                if ($b != "") {
+                    $query = $db->query("SELECT Nome_Item FROM `item` WHERE ID = $b");
+                }
+            }
+            foreach ($query->getResult() as $row) {
+                $ComandaAdd = [
+                    "$index" => [
+                        'name' => $row->Nome_Item,
+                    ]
+                ];
+                $index++;
+            }
+            if ($index1 == 0) {
+                $Comanda = $ComandaAdd;
+            } else {
+                array_push($Comanda, $ComandaAdd[$index1]);
+            }
+            $index1++;
+            if ($index1 % 2 == 0) {
+
+                if ($b != "") {
+                    $Comanda[$index - 1]['qtn'] = $b;
+                }
+            }
+        }
+        return $Comanda;
+    }
 
 }

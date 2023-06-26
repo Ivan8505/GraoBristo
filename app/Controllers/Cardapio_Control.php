@@ -69,7 +69,6 @@ Class Cardapio_Control extends BaseController {
                     ]
                 ];
                 array_push($carrinho, $carrinhoadd[$i]);
-                print_r($carrinho);
                 $i++;
             }
         }
@@ -83,7 +82,6 @@ Class Cardapio_Control extends BaseController {
         $Carrinho = $session->get('Carrinho');
         if ($Carrinho == null) {
             return redirect()->to('Menu');
-            
         }
         $boo = true;
         for ($index = 0; $index < count($Carrinho); $index++) {
@@ -101,8 +99,9 @@ Class Cardapio_Control extends BaseController {
         $itemadd = "2";
         for ($index = 0; $index < count($Carrinho); $index++) {
             if (dot_array_search("$index.ID", $Carrinho) != null) {
-                $itemadd = dot_array_search("$index.ID", $Carrinho);
-                $ItemCardapio = $itemadd . ", " . $ItemCardapio;
+                $itemAdd = dot_array_search("$index.ID", $Carrinho);
+                $qtnAdd = dot_array_search("$index.qtn", $Carrinho);
+                $ItemCardapio = $itemAdd . ", " . $qtnAdd . ", " . $ItemCardapio;
                 $totaladd = intval(dot_array_search("$index.qtn", $Carrinho)) * intval(dot_array_search("$index.preço", $Carrinho));
                 $total = $total + $totaladd;
             }
@@ -119,16 +118,14 @@ Class Cardapio_Control extends BaseController {
         if ($ModelCompra->insert($dados)) {
             for ($index = 0; $index < count($Carrinho); $index++) {
                 if (dot_array_search("$index.ID", $Carrinho) != null) {
-                    $Carrinho2 = $Carrinho;
                     unset($Carrinho[$index]);
                     $boo = true;
                 }
                 $session->set('Carrinho', $Carrinho);
-                $session->set('Comanda', $Carrinho2);
             }
         }
         if ($boo) {
-            return redirect()->to('Pedidos');
+            return redirect()->to('Home');
         }
         return redirect()->to('Menu');
     }

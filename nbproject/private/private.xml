@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Grao-Bristo/app/Views/User.php</file>
-            <file>file:/C:/xampp/htdocs/Grao-Bristo/app/Controllers/Cardapio.php</file>
-            <file>file:/C:/xampp/htdocs/Grao-Bristo/app/Controllers/Usuarios.php</file>
-            <file>file:/C:/xampp/htdocs/Grao-Bristo/app/Views/topo.php</file>
-            <file>file:/C:/xampp/htdocs/Grao-Bristo/app/Views/Cardapio.php</file>
+            <file>file:/C:/xampp/htdocs/GraoBristo/app/Views/Cardapio_View.php</file>
+            <file>file:/C:/xampp/htdocs/GraoBristo/app/Controllers/Comanda_Control.php</file>
+            <file>file:/C:/xampp/htdocs/GraoBristo/app/Config/Routes.php</file>
+            <file>file:/C:/xampp/htdocs/GraoBristo/app/Views/Comanda_View.php</file>
+            <file>file:/C:/xampp/htdocs/GraoBristo/app/Models/CompraModel.php</file>
+            <file>file:/C:/xampp/htdocs/GraoBristo/app/Controllers/Cardapio_Control.php</file>
+            <file>file:/C:/xampp/htdocs/GraoBristo/app/Models/ItemModel.php</file>
         </group>
     </open-files>
 </project-private>

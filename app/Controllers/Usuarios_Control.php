@@ -6,10 +6,11 @@ Class Usuarios_Control extends BaseController {
 
     public function index() {
         $session = session();
-        if ($session->get('Usuario') != null) {
+        if ($session->get('Usuario') == null) {
             return redirect()->to('Login');
         }
-        return view('Home');
+        $data['script']= ''; 
+        return view('Home', $data);
     }
 
     public function Login() {

@@ -3,6 +3,7 @@
 Class Home extends BaseController {
     
     public function index(){
-        return view('Home');
+        $data['script'] = "<Script>alert('Obrigado pela preferencia');</Script>";
+        return view('Home', $data);
     }
 }

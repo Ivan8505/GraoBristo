@@ -18,5 +18,13 @@ class ClientesModel extends Model {
             return $row->ID_Cliente;
         }
     }
+    
+    public function Name($Id) {
+        $db = db_connect();
+        $query = $db->query("SELECT Nome FROM Cliente WHERE ID_Cliente = '$Id'");
+        foreach ($query->getResult() as $row) {
+            return $row->Nome;
+        }
+    }
 
 }

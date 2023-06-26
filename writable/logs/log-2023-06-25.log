@@ -2685,3 +2685,1451 @@ in SYSTEMPATH\Database\BaseConnection.php on line 427.
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-06-25 20:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-25 20:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 20:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 20:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 20:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 20:34:47 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 35.
+ 1 APPPATH\Views\Comanda_View.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(13): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 20:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 20:35:00 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 35.
+ 1 APPPATH\Views\Comanda_View.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(13): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 20:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 20:35:34 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 35.
+ 1 APPPATH\Views\Comanda_View.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 20:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 20:43:31 --> Undefined variable $Comanda
+in APPPATH\Models\CompraModel.php on line 17.
+ 1 APPPATH\Models\CompraModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 17)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 20:51:56 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php on line 10
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 20:52:15 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php on line 10
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:05:26 --> mysqli::query(): Argument #1 ($query) cannot be empty
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('')
+ 4 APPPATH\Models\ItemModel.php(42): CodeIgniter\Database\BaseConnection->query('')
+ 5 APPPATH\Models\CompraModel.php(26): App\Models\ItemModel->a('1,1')
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:05:36 --> mysqli::query(): Argument #1 ($query) cannot be empty
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('')
+ 4 APPPATH\Models\ItemModel.php(42): CodeIgniter\Database\BaseConnection->query('')
+ 5 APPPATH\Models\CompraModel.php(26): App\Models\ItemModel->a('1,1')
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:05:36 --> mysqli::query(): Argument #1 ($query) cannot be empty
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('')
+ 4 APPPATH\Models\ItemModel.php(42): CodeIgniter\Database\BaseConnection->query('')
+ 5 APPPATH\Models\CompraModel.php(26): App\Models\ItemModel->a('1,1')
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:25:46 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 21:25:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\ItemModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(27): App\Models\ItemModel->a(Array)
+#5 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-25 21:25:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 4 APPPATH\Models\ItemModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 5 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:26:38 --> Undefined variable $Comanda
+in APPPATH\Models\CompraModel.php on line 43.
+ 1 APPPATH\Models\CompraModel.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 43)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:26:53 --> Undefined variable $array
+in APPPATH\Models\CompraModel.php on line 28.
+ 1 APPPATH\Models\CompraModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 28)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:26:58 --> Undefined variable $array
+in APPPATH\Models\CompraModel.php on line 28.
+ 1 APPPATH\Models\CompraModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 28)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 21:27:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\ItemModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(27): App\Models\ItemModel->a(Array)
+#5 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-25 21:27:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 4 APPPATH\Models\ItemModel.php(45): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 5 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 21:27:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\ItemModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(27): App\Models\ItemModel->a(Array)
+#5 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-25 21:27:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 4 APPPATH\Models\ItemModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 5 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:27:48 --> Unclosed '{' on line 7
+in APPPATH\Models\CompraModel.php on line 47.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CompraModel')
+ 3 APPPATH\Controllers\Comanda_Control.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CompraModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 21:28:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\ItemModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(27): App\Models\ItemModel->a(Array)
+#5 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-25 21:28:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 4 APPPATH\Models\ItemModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 5 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 21:28:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\ItemModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(27): App\Models\ItemModel->a(Array)
+#5 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-25 21:28:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 4 APPPATH\Models\ItemModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item FROM `item` WHERE ID = 1,1')
+ 5 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:28:33 --> Undefined variable $Comanda
+in APPPATH\Models\ItemModel.php on line 62.
+ 1 APPPATH\Models\ItemModel.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 62)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:28:34 --> Undefined variable $Comanda
+in APPPATH\Models\ItemModel.php on line 62.
+ 1 APPPATH\Models\ItemModel.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 62)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:28:37 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:28:38 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:29:20 --> Array to string conversion
+in APPPATH\Models\ItemModel.php on line 45.
+ 1 APPPATH\Models\ItemModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 45)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a([...])
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:30:19 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Models\ItemModel.php on line 44.
+ 1 APPPATH\Models\ItemModel.php(44): count('1,1')
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1,1')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:30:21 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Models\ItemModel.php on line 44.
+ 1 APPPATH\Models\ItemModel.php(44): count('1,1')
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1,1')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:32:34 --> foreach() argument must be of type array|object, string given
+in APPPATH\Models\ItemModel.php on line 44.
+ 1 APPPATH\Models\ItemModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 44)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1,1')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:32:34 --> foreach() argument must be of type array|object, string given
+in APPPATH\Models\ItemModel.php on line 44.
+ 1 APPPATH\Models\ItemModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 44)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1,1')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:32:36 --> foreach() argument must be of type array|object, string given
+in APPPATH\Models\ItemModel.php on line 44.
+ 1 APPPATH\Models\ItemModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 44)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1,1')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:32:37 --> foreach() argument must be of type array|object, string given
+in APPPATH\Models\ItemModel.php on line 44.
+ 1 APPPATH\Models\ItemModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 44)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1,1')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:32:37 --> foreach() argument must be of type array|object, string given
+in APPPATH\Models\ItemModel.php on line 44.
+ 1 APPPATH\Models\ItemModel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 44)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1,1')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:31 --> Undefined variable $index1
+in APPPATH\Models\ItemModel.php on line 49.
+ 1 APPPATH\Models\ItemModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 49)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:33 --> Undefined variable $index1
+in APPPATH\Models\ItemModel.php on line 49.
+ 1 APPPATH\Models\ItemModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 49)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:33 --> Undefined variable $index1
+in APPPATH\Models\ItemModel.php on line 49.
+ 1 APPPATH\Models\ItemModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 49)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:34 --> Undefined variable $index1
+in APPPATH\Models\ItemModel.php on line 49.
+ 1 APPPATH\Models\ItemModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 49)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:34 --> Undefined variable $index1
+in APPPATH\Models\ItemModel.php on line 49.
+ 1 APPPATH\Models\ItemModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 49)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:34 --> Undefined variable $index1
+in APPPATH\Models\ItemModel.php on line 49.
+ 1 APPPATH\Models\ItemModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 49)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:34 --> Undefined variable $index1
+in APPPATH\Models\ItemModel.php on line 49.
+ 1 APPPATH\Models\ItemModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 49)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:36:41 --> Undefined variable $Comanda
+in APPPATH\Models\ItemModel.php on line 58.
+ 1 APPPATH\Models\ItemModel.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 58)
+ 2 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 21:37:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\ItemModel.php(50): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+#5 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-25 21:37:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item FROM `item` WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item FROM `item` WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item FROM `item` WHERE ID = ')
+ 4 APPPATH\Models\ItemModel.php(50): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item FROM `item` WHERE ID = ')
+ 5 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 21:37:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Ite...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Ite...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Ite...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\ItemModel.php(50): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Ite...')
+#4 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+#5 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-25 21:37:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nome_Item FROM `item` WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nome_Item FROM `item` WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nome_Item FROM `item` WHERE ID = ')
+ 4 APPPATH\Models\ItemModel.php(50): CodeIgniter\Database\BaseConnection->query('SELECT Nome_Item FROM `item` WHERE ID = ')
+ 5 APPPATH\Models\CompraModel.php(27): App\Models\ItemModel->a('1, ')
+ 6 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:37:49 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:38:04 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php on line 10
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:39:23 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:41:03 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:41:04 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:00 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php on line 10
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:01 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php on line 10
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:15 --> Unmatched '}'
+in APPPATH\Models\CompraModel.php on line 47.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CompraModel')
+ 3 APPPATH\Controllers\Comanda_Control.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CompraModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:19 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:43 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:44 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:44 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:45 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:42:45 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:43:04 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:43:05 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:43:05 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:47:30 --> array_pad() expects exactly 3 arguments, 2 given
+in APPPATH\Models\CompraModel.php on line 43.
+ 1 APPPATH\Models\CompraModel.php(43): array_pad([...], [...])
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:47:31 --> array_pad() expects exactly 3 arguments, 2 given
+in APPPATH\Models\CompraModel.php on line 43.
+ 1 APPPATH\Models\CompraModel.php(43): array_pad([...], [...])
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:47:32 --> array_pad() expects exactly 3 arguments, 2 given
+in APPPATH\Models\CompraModel.php on line 43.
+ 1 APPPATH\Models\CompraModel.php(43): array_pad([...], [...])
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:47:32 --> array_pad() expects exactly 3 arguments, 2 given
+in APPPATH\Models\CompraModel.php on line 43.
+ 1 APPPATH\Models\CompraModel.php(43): array_pad([...], [...])
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:50:11 --> Undefined variable $index1
+in APPPATH\Models\CompraModel.php on line 29.
+ 1 APPPATH\Models\CompraModel.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 29)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:51:37 --> Undefined array key 2
+in APPPATH\Models\ItemModel.php on line 61.
+ 1 APPPATH\Models\ItemModel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 61)
+ 2 APPPATH\Models\CompraModel.php(28): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:52:40 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(11): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:10 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:11 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:12 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:13 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:13 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:33 --> syntax error, unexpected token "echo"
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 3 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:34 --> syntax error, unexpected token "echo"
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 3 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:38 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:53:39 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:54:35 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:54:36 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:54:36 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:54:37 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 21:54:37 --> Undefined variable $Comanda
+in APPPATH\Views\Comanda_View.php on line 36.
+ 1 APPPATH\Views\Comanda_View.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Comanda_View.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 5 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 22:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 22:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 22:05:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Desc' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ID_Clien...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_Clien...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_Clien...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(20): CodeIgniter\Database\BaseConnection->query('SELECT ID_Clien...')
+#4 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-25 22:05:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Desc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT ID_Cliente, DataHora, ItemCardapio, Conta FROM `carrinhocompras` WHERE DataHora LIKE \'2023-06-25%\' ORDER BY Desc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_Cliente, DataHora, ItemCardapio, Conta FROM `carrinhocompras` WHERE DataHora LIKE \'2023-06-25%\' ORDER BY Desc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_Cliente, DataHora, ItemCardapio, Conta FROM `carrinhocompras` WHERE DataHora LIKE \'2023-06-25%\' ORDER BY Desc')
+ 4 APPPATH\Models\CompraModel.php(20): CodeIgniter\Database\BaseConnection->query('SELECT ID_Cliente, DataHora, ItemCardapio, Conta FROM `carrinhocompras` WHERE DataHora LIKE \'2023-06-25%\' ORDER BY Desc')
+ 5 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 22:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 23:23:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\app\Models\CardapioModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT ID_Item ...')
+#4 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(21): App\Models\CardapioModel->a()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\app\Models\CardapioModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT ID_Item ...')
+#3 C:\xampp\htdocs\GraoBristo\app\Controllers\Cardapio_Control.php(21): App\Models\CardapioModel->a()
+#4 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-25 23:23:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\CardapioModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT ID_Item FROM Cardapio')
+ 3 APPPATH\Controllers\Cardapio_Control.php(21): App\Models\CardapioModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cardapio_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 23:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-25 23:38:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 23:38:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 23:38:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 23:38:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 23:38:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 23:38:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 23:38:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-25 23:38:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('127.0.0.1', 'root', '', 'BD_GraoBristo', 3306, '', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#6 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#7 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#11 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GraoBristo\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', Array, NULL, 'Email')
+#5 C:\xampp\htdocs\GraoBristo\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', Array, Array)
+#6 C:\xampp\htdocs\GraoBristo\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\GraoBristo\app\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+#9 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+#10 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-25 23:38:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `Cliente`
+WHERE `Email` = :Email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('12', 'Email', [...], null, 'Email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('Email', 'Email', '12', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Usuarios_Control.php(70): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->CadastrarClientes()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 23:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 23:47:43 --> Undefined variable $script
+in APPPATH\Views\Home.php on line 34.
+ 1 APPPATH\Views\Home.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $script', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Home.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\GraoBristo\\app\\Views\\Home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Home', [], true)
+ 5 APPPATH\Controllers\Usuarios_Control.php(12): view('Home')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 23:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 23:48:18 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 23:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 23:48:20 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 23:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 23:48:23 --> Undefined variable $data
+in APPPATH\Controllers\Usuarios_Control.php on line 12.
+ 1 APPPATH\Controllers\Usuarios_Control.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Controllers\\Usuarios_Control.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios_Control->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios_Control))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 23:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-25 23:50:46 --> syntax error, unexpected double-quoted string ", "
+in APPPATH\Models\CompraModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CompraModel')
+ 3 APPPATH\Controllers\Comanda_Control.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CompraModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 23:50:47 --> syntax error, unexpected double-quoted string ", "
+in APPPATH\Models\CompraModel.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CompraModel')
+ 3 APPPATH\Controllers\Comanda_Control.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CompraModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-25 23:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-25 23:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

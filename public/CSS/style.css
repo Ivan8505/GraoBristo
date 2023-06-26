@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(http://localhost/GraoBristo/public/imagens/login.jpg);
+  background-image: url(http://127.0.0.1/GraoBristo/public/Imagens/img-login.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed

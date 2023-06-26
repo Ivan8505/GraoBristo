@@ -1,0 +1,267 @@
+INFO - 2023-06-26 00:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 00:00:41 --> Undefined variable $Comanda
+in APPPATH\Models\CompraModel.php on line 51.
+ 1 APPPATH\Models\CompraModel.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 51)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:02:08 --> Undefined variable $Comanda
+in APPPATH\Models\CompraModel.php on line 52.
+ 1 APPPATH\Models\CompraModel.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 52)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:02:09 --> Undefined variable $Comanda
+in APPPATH\Models\CompraModel.php on line 52.
+ 1 APPPATH\Models\CompraModel.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 52)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:02:18 --> Undefined variable $Comanda
+in APPPATH\Models\CompraModel.php on line 52.
+ 1 APPPATH\Models\CompraModel.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Comanda', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 52)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:02:51 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Views\Comanda_View.php on line 35.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 4 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:02:53 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Views\Comanda_View.php on line 35.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 4 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:03:50 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Comanda_View.php on line 35.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 4 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 00:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 00:10:19 --> Undefined variable $qtn
+in APPPATH\Models\ItemModel.php on line 60.
+ 1 APPPATH\Models\ItemModel.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 60)
+ 2 APPPATH\Models\CompraModel.php(36): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:10:50 --> Undefined array key 1
+in APPPATH\Models\ItemModel.php on line 70.
+ 1 APPPATH\Models\ItemModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 70)
+ 2 APPPATH\Models\CompraModel.php(36): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:11:05 --> Undefined array key 2
+in APPPATH\Models\ItemModel.php on line 69.
+ 1 APPPATH\Models\ItemModel.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 69)
+ 2 APPPATH\Models\CompraModel.php(36): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:11:06 --> Undefined array key 2
+in APPPATH\Models\ItemModel.php on line 69.
+ 1 APPPATH\Models\ItemModel.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php', 69)
+ 2 APPPATH\Models\CompraModel.php(36): App\Models\ItemModel->a('1, ')
+ 3 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:19:37 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Models\ItemModel.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\ItemModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ItemModel')
+ 3 APPPATH\Models\CompraModel.php(26): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ItemModel')
+ 4 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:22:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Comanda_View.php on line 35.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Comanda_View', [], true)
+ 4 APPPATH\Controllers\Comanda_Control.php(10): view('Comanda_View', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 00:33:23 --> Undefined variable $qtn
+in APPPATH\Models\CompraModel.php on line 42.
+ 1 APPPATH\Models\CompraModel.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qtn', 'C:\\xampp\\htdocs\\GraoBristo\\app\\Models\\CompraModel.php', 42)
+ 2 APPPATH\Controllers\Comanda_Control.php(9): App\Models\CompraModel->a()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 00:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 00:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-26 00:55:55 --> Can't use method return value in write context
+in APPPATH\Controllers\Comanda_Control.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-06-26 00:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-26 01:06:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `carrinh...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `carrinh...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `carrinh...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(74): CodeIgniter\Database\BaseConnection->query('UPDATE `carrinh...')
+#4 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(15): App\Models\CompraModel->alt('')
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->rem()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-26 01:06:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ')
+ 4 APPPATH\Models\CompraModel.php(74): CodeIgniter\Database\BaseConnection->query('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ')
+ 5 APPPATH\Controllers\Comanda_Control.php(15): App\Models\CompraModel->alt('')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->rem()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 01:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-26 01:09:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\GraoBristo\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `carrinh...', 0)
+#1 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `carrinh...')
+#2 C:\xampp\htdocs\GraoBristo\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `carrinh...')
+#3 C:\xampp\htdocs\GraoBristo\app\Models\CompraModel.php(74): CodeIgniter\Database\BaseConnection->query('UPDATE `carrinh...')
+#4 C:\xampp\htdocs\GraoBristo\app\Controllers\Comanda_Control.php(15): App\Models\CompraModel->alt('')
+#5 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(934): App\Controllers\Comanda_Control->rem()
+#6 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+#7 C:\xampp\htdocs\GraoBristo\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GraoBristo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-26 01:09:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ')
+ 4 APPPATH\Models\CompraModel.php(74): CodeIgniter\Database\BaseConnection->query('UPDATE `carrinhocompras` SET `qtn`=\'2\' WHERE ID = ')
+ 5 APPPATH\Controllers\Comanda_Control.php(15): App\Models\CompraModel->alt('')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Comanda_Control->rem()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comanda_Control))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-26 01:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-26 01:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

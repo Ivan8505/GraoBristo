@@ -40,7 +40,8 @@ $routes->get('Menu', 'Cardapio_Control');//Tela cardapio
 $routes->post('Adicionar', 'Cardapio_Control::Adicionar');
 $routes->get('Menu', 'Cardapio_Control::Menu');
 $routes->post('Compra', 'Cardapio_Control::Compra');
-$routes->get('Pedidos', 'Comanda_Control');
+$routes->get('Comanda', 'Comanda_Control');
+$routes->get('Remove', 'Comanda_Control::rem');
 $routes->get('Test', '');
 
 

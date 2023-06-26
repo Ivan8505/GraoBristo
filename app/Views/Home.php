@@ -31,6 +31,7 @@
             }
 
         </style>
+        <?php echo $script?>
     </head>
     <body>
         <?php include 'Header.php'; ?>
